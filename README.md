@@ -1,6 +1,8 @@
 # Emotion Classification Using RAVDESS Data
 
-Welcome to the Emotion Classification project using the RAVDESS dataset! Although a lot of the concepts from this project are based off of recent research, the methodology for this project is unique, simple enough to follow, and effective! This project consists of four main steps, each documented in a separate notebook. Below is a detailed guide to navigate through these notebooks and understand their contents.
+Welcome to the Emotion Classification project using the RAVDESS dataset! Although a lot of the concepts from this project are based off of recent research, the methodology for this project is unique, simple enough to follow, and effective! The main focus of this project is to show that we can derive meaningful results without the use of complex models and architectures, that are often too time-consuming to process and train. A solid feature extraction pipeline is the foundation to any good model, and that is the focus of this project. I hope you enjoy!
+
+This project consists of four main steps, each documented in a separate notebook. Below is a detailed guide to navigate through these notebooks and understand their contents.
 
 You can view the HTML versions for the scripts below. The markdown may not render, but you can view an example video in step 2, and example audios in step 3. I would highly recommend checking them out because they look very cool!
 To recreate the contents, or to view the code directly, continue reading the documentation below.
@@ -23,7 +25,7 @@ This notebook is dedicated to downloading and preparing the RAVDESS dataset for 
 
 1. Importing Libraries and Data:
   - Essential libraries and setup.
-  - Instructions for obtaining an API key to access the data from Zenodo.
+  - Information on obtaining a free api key from Zenodo.
 2. Downloading Data:
   - Code to download and extract speech and song files from the RAVDESS dataset.
 3. Creating Training and Testing Data:
@@ -45,7 +47,7 @@ This notebook focuses on extracting features from the video data using a custom 
 
 1. Importing Libraries and Data:
   - Loading the training and testing video data.
-2. 3D HOG Feature Extraction:
+2. 3D HOG Feature Extraction (my own custom implementation):
   - Detailed explanation and implementation of the 3D HOG algorithm for dimensionality reduction.
 3. Visualizing HOG Features:
   - Visualization of gradient magnitudes and angles for a sample video.
@@ -93,17 +95,20 @@ This notebook covers the methods for classifying emotions using the extracted vi
 4. Visualizing Results:
   - Detailed visualizations of model performance, including confusion matrices and classification reports.
 
-How to Navigate
+## How to Navigate
 
 1. Start with 0_Loading_RAVDESS_Data.ipynb:
-	•	Follow the instructions to download and preprocess the data.
-	•	Ensure all data is saved correctly for subsequent steps.
+  - Follow the instructions to download and preprocess the data.
+  - Ensure all data is saved correctly for subsequent steps.
 2. Proceed to 1_Video_Feature_Extraction_3DHOG.ipynb:
-	•	Run the notebook to extract and save the video features using the custom 3D HOG algorithm.
+  - Run the notebook to extract and save the video features using the custom 3D HOG algorithm.
 3. Continue with 2_Audio_Feature_Extraction.ipynb:
-	•	Extract and save audio features using the detailed feature engineering process outlined.
+  - Extract and save audio features using the detailed feature engineering process outlined.
 4. Finally, run 3_Emotion_Classification.ipynb:
-	•	Train and evaluate the emotion classification models.
-	•	Explore the performance metrics and visualizations to understand model efficacy.
+  - Train and evaluate the emotion classification models.
+  - Explore the performance metrics and visualizations to understand model efficacy.
+
+## Conclusion
+This project showcases the potential of a custom approach to emotion classification using multimodal data. By combining a 3D Histograms of Oriented Gradients for video features and advanced audio feature extraction with B-Spline transformations, we were able to create a robust and efficient feature extraction pipeline. The integration of these features through Partial Tucker Decomposition significantly reduced the dimensionality, making our models more efficient without sacrificing performance. The impressive accuracy of our ensemble method underscores the power of combining video and audio data, paving the way for more sophisticated and accurate emotion detection systems in real-world applications. This custom approach not only enhances the accuracy of emotion classification but also demonstrates the potential for broader applications in any field requiring nuanced analysis of multimedia data.
 
 By following these steps, you will gain insights into the process of building a robust emotion classification model using both video and audio features from the RAVDESS dataset. Happy learning and coding!
