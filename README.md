@@ -11,6 +11,12 @@ To recreate the contents, or to view the code directly, continue reading the doc
 - [Step 3: Audio Feature Extraction](https://htmlpreview.github.io/?https://github.com/Chai-T29/Video_Audio_SentimentAnalysis/blob/364df9d09017d037ea1ed29a13040e9ab462ce81/RAVDESS_HTML_Notebooks/2_Audio_Feature_Extraction.html)
 - [Step 4: Building Classification Model](https://htmlpreview.github.io/?https://github.com/Chai-T29/Video_Audio_SentimentAnalysis/blob/364df9d09017d037ea1ed29a13040e9ab462ce81/RAVDESS_HTML_Notebooks/3_Emotion_Classification.html)
 
+## Requirements
+
+```bash
+pip install requests tqdm opencv-python-headless numpy matplotlib tensorly librosa seaborn scikit-fda pandas torch scikit-learn
+```
+
 ## Notebooks Overview
 
 ### 1. Loading Data
