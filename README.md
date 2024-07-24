@@ -4,8 +4,9 @@ Welcome to the Emotion Classification project using the RAVDESS dataset! Althoug
 
 This project consists of four main steps, each documented in a separate notebook. Below is a detailed guide to navigate through these notebooks and understand their contents.
 
-You can view the HTML versions for the scripts below. The markdown may not render, but you can view an example video in step 2, and example audios in step 3. I would highly recommend checking them out because they look very cool!
-To recreate the contents, or to view the code directly, continue reading the documentation below.
+You can view the HTML versions for the scripts below. The markdown may not render, but you can view an example video in step 2, and example audios in step 3. I would highly recommend checking them out because they look very cool! If the videos do not pop up, just refresh the page, and it should show!
+
+To recreate the contents, or to view the code directly, continue reading the documentation below these links.
 - [Step 1: Loading Data](https://htmlpreview.github.io/?https://github.com/Chai-T29/Video_Audio_SentimentAnalysis/blob/364df9d09017d037ea1ed29a13040e9ab462ce81/RAVDESS_HTML_Notebooks/0_Loading_RAVDESS_Data.html)
 - [Step 2: Video Feature Extraction](https://htmlpreview.github.io/?https://github.com/Chai-T29/Video_Audio_SentimentAnalysis/blob/364df9d09017d037ea1ed29a13040e9ab462ce81/RAVDESS_HTML_Notebooks/1_Video_Feature_Extraction_3DHOG.html)
 - [Step 3: Audio Feature Extraction](https://htmlpreview.github.io/?https://github.com/Chai-T29/Video_Audio_SentimentAnalysis/blob/364df9d09017d037ea1ed29a13040e9ab462ce81/RAVDESS_HTML_Notebooks/2_Audio_Feature_Extraction.html)
